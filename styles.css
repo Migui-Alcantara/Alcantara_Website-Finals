@@ -38,6 +38,7 @@ html, body {
   padding: 1.5rem; 
   border-radius: 10px;
 }
+
 .review-title {
   font-size: 2rem;
   margin-top: 0;
@@ -70,12 +71,17 @@ html, body {
   color: #f0f0f0;
 }
 
-.review-image {
-  width: 100%;
-  aspect-ratio: 16/9;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 1rem;
+.reviews a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.reviews a:hover {
+  text-decoration: underline;
+}
+
+.review-image:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
 }
 
 .footer {
@@ -152,4 +158,56 @@ html, body {
 .social-item:hover {
   transform: translateX(5px);
   color: #ffd6ff;
+}
+
+.bio-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Game Review Styling*/
+.viewed-review-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.final-box {
+  background-color: #f0f0f0;
+  color: #222;
+  padding: 1.5rem 2rem;
+  border-radius: 20px;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.rating {
+  text-align: center;
+}
+
+.rating h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #3d123d;
+}
+
+.stars {
+  color: #f2b01e;
+  font-size: 1.2rem;
+  margin-top: 0.25rem;
+}
+
+.final-text {
+  font-style: italic;
+  margin-left: 1.5rem;
+  color: #333;
+  max-width: 70%;
 }
