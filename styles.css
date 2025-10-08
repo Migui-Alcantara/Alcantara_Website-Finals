@@ -15,19 +15,37 @@ html, body {
   justify-content: space-between;
   align-items: center;
   background-color: #3d123d;
-  padding: 1rem 2rem;
+  color: white;
+  padding: 10px 20px;
 }
-.navbar h1 {
+
+.logo {
   margin: 0;
   font-size: 1.5rem;
+  font-weight: bold;
 }
-.navbar a {
-  margin-left: 1.5rem;
-  color: #fff;
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li a {
+  color: white;
   text-decoration: none;
+  margin-left: 1.5rem;
 }
-.navbar a:hover {
+
+.nav-links li a:hover {
+  color: #d8bfd8;
   text-decoration: underline;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
 }
 
 /* Main container for each game review*/
@@ -162,10 +180,9 @@ html, body {
 
 .bio-image {
   width: 100%;
-  height: 300px;
+  height: 290px;
   object-fit: cover;
   border-radius: 8px;
-  margin-bottom: 1rem;
 }
 
 /* Game Review Styling*/
@@ -210,4 +227,32 @@ html, body {
   margin-left: 1.5rem;
   color: #333;
   max-width: 70%;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #3d123d;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    width: 160px;
+    border-radius: 0 0 8px 8px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 8px 0;
+  }
 }
