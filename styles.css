@@ -191,7 +191,6 @@ html, body {
   height: 400px;
   object-fit: cover;
   border-radius: 8px;
-  margin-bottom: 1rem;
 }
 
 .final-box {
@@ -230,7 +229,7 @@ html, body {
 }
 
 /* --- Responsive --- */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .menu-toggle {
     display: block;
   }
@@ -255,4 +254,33 @@ html, body {
   .nav-links li {
     margin: 8px 0;
   }
+
+  .bio-image {
+    width: 95%;
+    height: auto;
+    max-height: 320px;
+    object-fit: contain;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto 1.5rem auto;
+  }
+}
+
+@media (max-width: 768px) {
+.review-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: contain;
+}
+.viewed-review-image{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.bio-image {
+  display: none;
+}
 }
